@@ -1,0 +1,561 @@
+.logo-word {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5em;
+    margin: 0;
+  }
+  .bitamin-img {
+    width: 100%;
+  }
+  li {
+    font-size: 1em;
+    padding: 0.3em;
+  }
+  .main {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border: 1px solid red;
+  
+    justify-content: center;
+  }
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: fade 9s infinite;
+  }
+  .main-top-img {
+    background-image: url("images/pytonmn2.jpg");
+    background-position: right center;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    animation-delay: 0s;
+  }
+  .main-top-img2 {
+    background-image: url("images/toothstick.jpg");
+    height: 300px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation-delay: 3s;
+  }
+  
+  .main-top-img3 {
+    background-image: url("images/hongsam.jpg");
+    background-position: right center;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    animation-delay: 6s;
+  }
+  .about-img-best {
+    background-image: url("images/best-about-mobile2.jpg");
+    background-position: left center;
+  
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+  }
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    30% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .post-main {
+    background: none;
+    color: #151515;
+  }
+  .post-date {
+    font-weight: 400;
+    font-size: 0.75em;
+  }
+  .post-vertwo-img2 {
+    display: none;
+  }
+  .main-title {
+    font-weight: 700;
+    font-size: 2em;
+  }
+  .post-title-one {
+    font-weight: 700;
+    font-size: 1em;
+  }
+  .aboutme-title {
+    font-weight: 700;
+    font-size: 2.178em;
+  }
+  .main-content {
+    font-weight: 400;
+    font-size: 1em;
+  }
+  .post-content-two {
+    font-weight: 400;
+    font-size: 1em;
+  }
+  
+  body {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  .date {
+    color: #000000;
+    font-size: 0.886em;
+    font-weight: 400;
+  }
+  .title {
+    color: #141414;
+    font-size: 1em;
+    font-weight: 700;
+  }
+  .content {
+    color: #505050;
+    font-size: 1em;
+    font-weight: 400;
+  }
+  
+  .best-about {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 20px auto 20px;
+    border: 1px solid red;
+  }
+  .best-about > article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .bitamin-about {
+    display: grid;
+    grid-template: auto auto auto auto auto auto / 20px auto 20px;
+    border: 1px solid blue;
+  }
+  .bitamin-about > article {
+  }
+  .transform {
+  }
+  .bita-about4 {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  .bita-about5 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+  .bita-about6 {
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
+  .bita-about {
+    grid-row: 4/5;
+    grid-column: 2/3;
+  }
+  .bita-about2 {
+    grid-row: 5/6;
+    grid-column: 2/3;
+  }
+  .bita-about3 {
+    grid-row: 6/7;
+    grid-column: 2/3;
+  }
+  .bitamin {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 20px auto 20px;
+    border: 1px solid blueviolet;
+  }
+  .bitamin > article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .bita-one {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  .bita-two {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+  .bita-three {
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
+  
+  .more-btn {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 1em;
+    font-weight: 700;
+  
+    border: none;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+  }
+  .contact {
+    max-width: 400px;
+    margin: auto;
+  
+    border: 1px sollid pink;
+  }
+  
+  h2 {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    margin-top: 20px;
+    background: yellow;
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  footer {
+    background: lightgray;
+    padding: 2em 0;
+    text-align: center;
+  }
+  .name {
+    color: black;
+    font-size: 1em;
+    font-weight: 700;
+  }
+  .copyright {
+    color: black;
+    font-size: 0.75em;
+    font-weight: 400;
+  }
+  
+  .toptitle,
+  .toptitle-logo {
+    display: flex;
+    flex-direction: row;
+  }
+  .toptitle {
+    justify-content: space-between;
+  }
+  .toptitle-logo {
+    margin-top: 0.1em;
+  }
+  .logo {
+    width: 20px;
+    height: 20px;
+  }
+  .new {
+    text-align: center;
+  }
+  .hambuger,
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu {
+    transform: translateX(100%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 2;
+  }
+  
+  ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+  }
+  .selected {
+    text-shadow: 0 0 0 transparent;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+  .selected:hover {
+    color: black;
+    /* text-shadow: 0 0 2px blue; */
+  }
+  a {
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+    font-size: 1.2em;
+  }
+  a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: blue;
+    transition: width 0.3s ease;
+  }
+  a:hover::after {
+    width: 100%;
+  }
+  
+  .open-btn,
+  .close-btn {
+    cursor: pointer;
+    color: black;
+  }
+  .close-btn {
+    font-size: 25px;
+    padding: 0.5em;
+  }
+  .open-btn:hover {
+    transition: color 3s font-size 3s;
+  
+    font-size: 20px;
+  }
+  .close-btn:hover {
+    transition: color 3s font-size 3s;
+  
+    font-size: 30px;
+  }
+  .move {
+    transform: translateX(0);
+    transition: 250ms ease;
+  }
+  /* section {
+    border: 2px solid #e0e0e0;
+    border-radius: 16px;
+    background: #fff;
+    padding: 24px;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.05);
+  } */
+  
+  h1,
+  h2 {
+    /* color: #0c4a6e; */
+    margin-bottom: 10px;
+  }
+  
+  .slogan {
+    font-size: 1.2em;
+    color: #4caf50;
+    margin-bottom: 20px;
+  }
+  
+  .highlight-box {
+    background: #f0f5ee;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #f8f8f8;
+  }
+  
+  .certs li {
+    margin-bottom: 8px;
+  }
+  .highlight-box {
+    background: #f0f5ee;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .logo-word {
+    text-align: center;
+  }
+  .toptitle-logo {
+    text-align: center;
+  }
+  .bliding {
+    width: 100%;
+  }
+  .sns {
+    width: 100px;
+  }
+  .business {
+    text-align: center;
+  }
+  .business-grid {
+    border: 1px solid red;
+  }
+  button {
+    background-color: yellow;
+    padding: 1em 3em;
+  }
+  .subscribe {
+    text-align: center;
+  }
+  .subscribe-grid {
+    border: 2px solid pink;
+  }
+  /* .bital-grid {
+    display: grid;
+    grid-template-columns: 3fr 500px;
+  }
+  .bital-img {
+    width: 300px;
+    grid-column: 1/2;
+  }
+  .bital-title {
+    grid-column: 2/3;
+  }
+  .bital-flex {
+    border: 1px solid orange;
+  } */
+  .news {
+    width: 100%;
+  }
+  @media (min-width: 600px) {
+    .open-btn,
+    .close-btn {
+      display: none;
+    }
+    .menu {
+      flex-direction: row;
+      transform: translateX(0);
+      position: initial;
+    }
+    ul {
+      flex-direction: row;
+    }
+    li {
+      padding: 0 0.5em;
+      font-size: 0.75em;
+      margin-left: 2em;
+      font-weight: 700;
+    }
+    .nav-item {
+      display: flex;
+    }
+    .toptitle {
+      justify-content: first baseline;
+    }
+    .toptitle-logo {
+      padding: 0.4em 0;
+    }
+    .logo-word {
+      text-align: center;
+    }
+  
+    .bitamin {
+      display: grid;
+      grid-template: 1em auto 1em / 1em auto auto auto 1em;
+      border: 1px solid blue;
+      grid-gap: 10px;
+    }
+  
+    .bita-one {
+      grid-row: 2/3;
+      grid-column: 2/3;
+    }
+    .bita-two {
+      grid-row: 2/3;
+      grid-column: 3/4;
+    }
+    .bita-three {
+      grid-row: 2/3;
+      grid-column: 4/5;
+    }
+    .main-top-img {
+      background-image: url("images/pytonmn2.jpg");
+    }
+    .about-img-best {
+      background-image: url("images/best-about-img2.png");
+      background-repeat: no-repeat;
+      height: 300px;
+  
+      background-position: center;
+    }
+    .bitamin-about {
+      display: grid;
+      grid-template: 1em auto auto 1em / 1em auto auto auto 1em;
+      border: 1px solid blue;
+    }
+    .bitamin-about > article {
+    }
+    .bita-about4 {
+      grid-row: 2/3;
+      grid-column: 2/3;
+    }
+    .bita-about5 {
+      grid-row: 2/3;
+      grid-column: 3/4;
+    }
+    .bita-about6 {
+      grid-row: 2/3;
+      grid-column: 4/5;
+    }
+    .bita-about {
+      grid-row: 3/4;
+      grid-column: 2/3;
+    }
+    .bita-about2 {
+      grid-row: 3/4;
+      grid-column: 3/4;
+    }
+    .bita-about3 {
+      grid-row: 3/4;
+      grid-column: 4/5;
+    }
+  }
+  
