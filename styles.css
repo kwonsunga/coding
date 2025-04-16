@@ -6,8 +6,15 @@
     font-size: 1.5em;
     margin: 0;
   }
+
   .bitamin-img {
     width: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .bitamin-img:hover {
+    transform: scale(1.1);
+    z-index: 10;
   }
   li {
     font-size: 1em;
@@ -34,7 +41,7 @@
     background-repeat: no-repeat;
     height: 300px;
     background-size: cover;
-    background-position: center;
+    background-position :center;
     animation-delay: 0s;
   }
   .main-top-img2 {
@@ -43,7 +50,7 @@
     background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position :center;
     animation-delay: 3s;
   }
   
@@ -53,7 +60,7 @@
     background-repeat: no-repeat;
     height: 300px;
     background-size: cover;
-    background-position: center;
+    background-position :center;
     animation-delay: 6s;
   }
   .about-img-best {
@@ -62,7 +69,7 @@
   
     height: 300px;
     background-size: cover;
-    background-position: center;
+
     object-fit: cover;
   }
  
@@ -145,10 +152,10 @@
     grid-template: auto auto auto auto auto auto / 20px auto 20px;
     border: 1px solid blue;
   }
-  /* .bitamin-about > article {
-  } */
-  /* .transform {
-  } */
+  .bitamin-about > article {
+
+    text-align: center;
+  }
   .bita-about4 {
     grid-row: 1/2;
     grid-column: 2/3;
@@ -213,23 +220,16 @@
     border: 1px sollid pink;
   }
   
-  h2 {
-    font-size: 18px;
-    font-weight: bold;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-  }
-  
   p {
     font-size: 14px;
     margin-bottom: 20px;
   }
   
-  label {
+  /* label {
     display: block;
     margin-top: 15px;
     font-weight: bold;
-  }
+  } */
   
   input,
   textarea {
@@ -246,6 +246,7 @@
     padding: 10px 15px;
     font-weight: bold;
     cursor: pointer;
+    font-size: 1em;
   }
   footer {
     background: lightgray;
@@ -265,6 +266,10 @@
   
   .toptitle {
 font-size: 1.2em;
+display: flex;
+justify-content: space-between; 
+align-items: center;
+padding: 10px 20px;
   }
   .toptitle-logo {
     margin-top: 0.1em;
@@ -289,7 +294,20 @@ font-size: 1.2em;
     background: white;
     z-index: 2;
   }
+  .toptitle {
+    position: relative;
+  }
   
+  .toptitle-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .logo-word {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
   ul {
     display: flex;
     list-style-type: none;
@@ -347,14 +365,6 @@ font-size: 1.2em;
     transform: translateX(0);
     transition: 250ms ease;
   }
-  /* section {
-    border: 2px solid #e0e0e0;
-    border-radius: 16px;
-    background: #fff;
-    padding: 24px;
-    margin-bottom: 30px;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.05);
-  } */
   
   h1,
   h2 {
@@ -367,7 +377,11 @@ font-size: 1.2em;
     color: #4caf50;
     margin-bottom: 20px;
   }
-  
+  .highlight {
+    color: red;       
+    font-size: 1.5em;   
+    font-weight: bold; 
+  }
   .highlight-box {
     background: #f0f5ee;
     padding: 15px;
@@ -411,7 +425,13 @@ font-size: 1.2em;
     text-align: center;
   }
   .toptitle-logo {
-    text-align: center;
+
+  }
+
+  .logo-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .bliding {
     width: 100%;
@@ -424,7 +444,28 @@ font-size: 1.2em;
   }
   .business-grid {
     border: 1px solid red;
+    display: grid;
+    grid-template: 2em auto auto auto auto 2em / 2em auto 2em ;
   }
+  .busi-one{
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+  .busi-two{
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
+  
+  .busi-three{
+    grid-row: 4/5;
+    grid-column: 2/3;
+  }
+  
+  .busi-four{
+    grid-row: 5/6;
+    grid-column: 2/3;
+  }
+
   button {
     background-color: yellow;
     padding: 1em 3em;
@@ -439,6 +480,36 @@ font-size: 1.2em;
     border: 2px solid pink;
   padding: 1em 1em;
   }
+  .bital-img{
+    width: 90%;
+  }
+  .bital-grid{
+    border: 1px solid green;
+    display: grid;
+
+    text-align: center;
+
+    grid-template: 2em auto auto auto auto 2em / 2em auto 2em;
+    
+  }
+  .bital-up{
+grid-row: 2/3;
+grid-column: 2/3;
+
+padding-bottom: 2em;
+  }
+  .benefits{
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
+.ingredients{
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+.qa{
+  grid-row: 5/6;
+  grid-column: 2/3;
+}
 
   @media (min-width: 600px) {
     .open-btn,
@@ -450,7 +521,7 @@ font-size: 1.2em;
     }
     .menu {
       flex-direction: row;
-      transform: translateX(0);
+      transform: translateX(280%);
       position: initial;
     }
 
@@ -464,10 +535,12 @@ font-size: 1.2em;
       font-weight: 700;
     }
     .nav-item {
-      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
     }
     .toptitle {
-      justify-content: first baseline;
+      display: flex;
     }
     .toptitle-logo {
       padding: 0.4em 0;
@@ -516,11 +589,13 @@ font-size: 1.2em;
       display: grid;
       grid-template: 1em auto auto 1em / 1em auto auto auto 1em;
       border: 1px solid blue;
+
     }
 
     .bita-about4 {
       grid-row: 2/3;
       grid-column: 2/3;
+
     }
     .bita-about5 {
       grid-row: 2/3;
@@ -561,4 +636,62 @@ padding: 1em 0;
     grid-column: 4/5;
 align-self: center;
   }
+  .bital-img{
+    width: 50%;
+  }
+  .bital-grid{
+    border: 1px solid red;
+    display: grid;
+
+    text-align: center;
+
+    grid-template: 2em auto auto auto 2em / 2em auto auto 2em;
+    
+  }
+  .bital-up{
+grid-row: 2/5;
+grid-column: 2/3;
+  }
+  .benefits{
+    grid-row: 2/3;
+    grid-column: 3/4;
+  }
+.ingredients{
+  grid-row: 3/4;
+  grid-column: 3/4;
 }
+.qa{
+  grid-row: 4/5;
+  grid-column: 3/4;
+}
+.benefits p {
+  display: inline-block;
+  margin-right: 2em;
+}
+.business-grid {
+  border: 1px solid greenyellow;
+  display: grid;
+  grid-template: 2em auto auto auto 2em / 2em auto 2em auto 2em ;
+}
+.busi-one{
+  grid-row: 2/5;
+  grid-column: 2/3;
+}
+.busi-two{
+  grid-row: 2/3;
+  grid-column: 4/5;
+}
+
+.busi-three{
+  grid-row: 3/4;
+  grid-column:  4/5;
+}
+
+.busi-four{
+  grid-row: 4/5;
+  grid-column:  4/5;
+}
+.bliding{
+  width: 100%;
+}
+  }
