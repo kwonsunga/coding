@@ -241,11 +241,6 @@
     padding: 2em 0;
     text-align: center;
   }
-  /* .name {
-    color: black;
-    font-size: 1em;
-    font-weight: 700;
-  } */
   .copyright {
     color: black;
     font-size: 0.75em;
@@ -411,15 +406,6 @@ padding: 10px 20px;
   }
   .logo-word {
     text-align: center;
-  }
-  .toptitle-logo {
-
-  }
-
-  .logo-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   .bliding {
     width: 100%;
