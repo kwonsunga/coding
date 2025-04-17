@@ -16,6 +16,9 @@
     transform: scale(1.1);
     z-index: 10;
   }
+  a.transform::after{
+    content: none;
+  }
   li {
     font-size: 1em;
     padding: 0.3em;
@@ -25,9 +28,11 @@
     width: 100%;
     height: 300px;
     overflow: hidden;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   
     justify-content: center;
+
+    padding-bottom: 2em;
   }
   .slide {
     position: absolute;
@@ -140,7 +145,7 @@
   .best-about {
     display: grid;
     grid-template: 1fr 1fr 1fr / 20px auto 20px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   .best-about > article {
     display: flex;
@@ -150,7 +155,7 @@
   .bitamin-about {
     display: grid;
     grid-template: auto auto auto auto auto auto / 20px auto 20px;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
   }
   .bitamin-about > article {
 
@@ -183,7 +188,7 @@
   .bitamin {
     display: grid;
     grid-template: 1fr 1fr 1fr / 20px auto 20px;
-    border: 1px solid blueviolet;
+    /* border: 1px solid blueviolet; */
   }
   .bitamin > article {
     display: flex;
@@ -213,23 +218,6 @@
     cursor: pointer;
     border-bottom: 1px solid black;
   }
-  .contact {
-    max-width: 400px;
-    margin: auto;
-  
-    border: 1px sollid pink;
-  }
-  
-  p {
-    font-size: 14px;
-    margin-bottom: 20px;
-  }
-  
-  /* label {
-    display: block;
-    margin-top: 15px;
-    font-weight: bold;
-  } */
   
   input,
   textarea {
@@ -253,11 +241,11 @@
     padding: 2em 0;
     text-align: center;
   }
-  .name {
+  /* .name {
     color: black;
     font-size: 1em;
     font-weight: 700;
-  }
+  } */
   .copyright {
     color: black;
     font-size: 0.75em;
@@ -272,7 +260,7 @@ align-items: center;
 padding: 10px 20px;
   }
   .toptitle-logo {
-    margin-top: 0.1em;
+    margin: 0.1em;
     
   }
 
@@ -341,7 +329,7 @@ padding: 10px 20px;
   a:hover::after {
     width: 100%;
   }
-  
+
   .open-btn,
   .close-btn {
     cursor: pointer;
@@ -443,7 +431,7 @@ padding: 10px 20px;
     text-align: center;
   }
   .business-grid {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: grid;
     grid-template: 2em auto auto auto auto 2em / 2em auto 2em ;
   }
@@ -477,14 +465,14 @@ padding: 10px 20px;
     width: 100%;
   }
   .subscribe-grid {
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
   padding: 1em 1em;
   }
   .bital-img{
     width: 90%;
   }
   .bital-grid{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     display: grid;
 
     text-align: center;
@@ -552,7 +540,7 @@ padding-bottom: 2em;
     .bitamin {
       display: grid;
       grid-template: 1em auto 1em / 1em auto auto auto 1em;
-      border: 1px solid blue;
+      /* border: 1px solid blue; */
       grid-gap: 10px;
     }
   
@@ -588,7 +576,7 @@ padding-bottom: 2em;
     .bitamin-about {
       display: grid;
       grid-template: 1em auto auto 1em / 1em auto auto auto 1em;
-      border: 1px solid blue;
+      /* border: 1px solid blue; */
 
     }
 
@@ -618,12 +606,12 @@ padding-bottom: 2em;
       grid-column: 4/5;
     }
     .bital-grid{
-      border: 1px solid green;
+      /* border: 1px solid green; */
       display: grid;
       
     }
     .subscribe-grid {
-      border: 2px solid pink;
+      /* border: 2px solid pink; */
       display: grid;
       grid-template-columns: 1em auto 2em auto 1em ;
 padding: 1em 0;
@@ -640,7 +628,7 @@ align-self: center;
     width: 50%;
   }
   .bital-grid{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: grid;
 
     text-align: center;
@@ -669,7 +657,7 @@ grid-column: 2/3;
   margin-right: 2em;
 }
 .business-grid {
-  border: 1px solid greenyellow;
+  /* border: 1px solid greenyellow; */
   display: grid;
   grid-template: 2em auto auto auto 2em / 2em auto 2em auto 2em ;
 }
