@@ -493,11 +493,25 @@ padding-bottom: 2em;
     .open-btn{
       margin: 0;
     }
+ 
     .menu {
-      flex-direction: row;
-      transform: translateX(280%);
+      position: absolute;
+      transform: translateX(0);
       position: initial;
+      /* border: 1px solid green; */
+
+      
     }
+    .toptitle-logo {
+      position: relative;
+      z-index: 10;
+      
+
+      /* border: 1px solid pink; */
+      padding: 0.4em 0;
+    
+    }
+
 
     ul {
       flex-direction: row;
@@ -516,13 +530,10 @@ padding-bottom: 2em;
     .toptitle {
       display: flex;
     }
-    .toptitle-logo {
-      padding: 0.4em 0;
-    }
+
     .logo-word {
       text-align: center;
     }
-  
     .bitamin {
       display: grid;
       grid-template: 1em auto 1em / 1em auto auto auto 1em;
